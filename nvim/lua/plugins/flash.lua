@@ -10,4 +10,10 @@ return {
       desc = "Flash",
     },
   },
+  ---@type Flash.Config
+  opts = {
+    search = {
+      mode = "search",
+    },
+  },
 }
