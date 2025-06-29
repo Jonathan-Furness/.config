@@ -11,3 +11,7 @@
 !/zed/keymap.json
 !/zed/settings.json
 
+# kanata settings
+!/kanata/
+!/kanata/kanata.kbd
+!/kanata/com.example.kanata.plist
