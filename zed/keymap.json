@@ -1,0 +1,76 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      "space f f": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore", // In insert mode, make jk escape to normal mode.
+      "ctrl-x ctrl-o": "editor::ShowCompletions",
+      "ctrl-x ctrl-a": "assistant::InlineAssist",
+      "ctrl-x ctrl-c": "editor::ShowEditPrediction"
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-u": ["workspace::SendKeystrokes", "ctrl-u z z"],
+      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-d z z"],
+      "space s v": "pane::SplitVertical",
+      "space s h": "pane::SplitHorizontal",
+      "space s x": "pane::CloseActiveItem",
+      "space f f": "file_finder::Toggle",
+      "space f s": "workspace::NewSearch",
+      "space e": "editor::Hover",
+      "g R": "editor::FindAllReferences",
+      "z z": "vim::Center"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      // https://github.com/zed-industries/zed/issues/4753
+      // https://github.com/zed-industries/zed/issues/4270
+      "escape": "project_panel::ToggleFocus",
+      "enter": "project_panel::Open",
+      "o": "project_panel::NewDirectory",
+      "a": "project_panel::NewFile",
+      "r": "project_panel::Rename",
+      "x": "project_panel::Cut",
+      "y": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "d": "project_panel::Delete",
+      // Directory expansion
+      "l": "project_panel::ExpandSelectedEntry",
+      "h": "project_panel::CollapseSelectedEntry",
+      // Move up and down
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious"
+      // "shift-d": "project_panel::Delete"
+    }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "shift-w": "project_panel::CollapseAllEntries"
+    }
+  }
+]

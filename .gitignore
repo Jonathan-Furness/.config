@@ -1,0 +1,12 @@
+/**
+!/.gitignore
+
+# Nvim settings
+!/nvim/
+!/nvim/**
+
+# Zed settings
+!/zed/
+!/zed/keymap.json
+!/zed/settings.json
+
