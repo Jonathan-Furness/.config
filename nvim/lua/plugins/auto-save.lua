@@ -104,7 +104,7 @@ vim.api.nvim_create_autocmd("BufLeave", {
 return {
   {
     "okuuva/auto-save.nvim",
-    enabled = true,
+    enabled = false,
     cmd = "ASToggle", -- optional for lazy loading on command
     event = { "InsertLeave", "TextChanged" }, -- optional for lazy loading on trigger events
     opts = {
