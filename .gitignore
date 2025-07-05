@@ -15,3 +15,7 @@
 !/kanata/
 !/kanata/kanata.kbd
 !/kanata/com.example.kanata.plis
+
+# tmux seettings
+!/tmux/
+!/tmux/tmux.conf
