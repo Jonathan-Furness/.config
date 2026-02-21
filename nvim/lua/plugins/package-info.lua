@@ -9,10 +9,16 @@ return {
 
     -- Setup package-info
     package_info.setup({
-      colors = {
-        up_to_date = "#3C4048",
-        outdated = "#d19a66",
-        invalid = "#ee4b2b",
+      highlights = {
+        up_to_date = {
+          fg = "#3C4048",
+        },
+        outdated = {
+          fg = "#d19a66",
+        },
+        invalid = {
+          fg = "#ee4b2b",
+        },
       },
       icons = {
         enable = true,
