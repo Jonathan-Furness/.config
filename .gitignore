@@ -1,6 +1,8 @@
 /**
 !/.gitignore
 !/README.md
+!/install.sh
+!/Brewfile
 
 # Nvim settings
 !/nvim/
@@ -11,11 +13,15 @@
 !/zed/keymap.json
 !/zed/settings.json
 
-# kanata settings
-!/kanata/
-!/kanata/kanata.kbd
-!/kanata/com.example.kanata.plis
-
-# tmux seettings
+# tmux settings
 !/tmux/
 !/tmux/tmux.conf
+
+# zsh settings
+!/zsh/
+!/zsh/.aliases
+
+# lazygit settings
+!/lazygit/
+!/lazygit/config.yml
+

@@ -1,0 +1,14 @@
+# Custom Aliases
+alias aliases="nvim ~/.config/zsh/.aliases"
+alias custom-zsh="nvim ~/.zshrc"
+alias custom-nvim="nvim ~/.config/nvim/"
+
+# Git tools
+alias lazygit='lazygit -ucd ~/.config/lazygit'
+
+# Utils
+alias random-string="openssl rand -base64 20 |  sed -E 's/(.)\1+/\1/g'"
+
+# Local aliases (not tracked in git)
+[[ -f ~/.config/zsh/.aliases.local ]] && source ~/.config/zsh/.aliases.local
+
