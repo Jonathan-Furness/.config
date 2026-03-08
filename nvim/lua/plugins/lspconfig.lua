@@ -7,7 +7,12 @@ return {
         pyright = {
           enabled = false,
         },
-        ty = {},
+        ruff = {
+          cmd = { "uv", "run", "ruff", "server" },
+        },
+        ty = {
+          cmd = { "uv", "run", "ty", "server" },
+        },
       },
     },
   },
