@@ -6,6 +6,9 @@ alias custom-nvim="nvim ~/.config/nvim/"
 # Git tools
 alias lazygit='lazygit -ucd ~/.config/lazygit'
 
+# Devcontainer
+alias dcnvim='devcontainer exec --workspace-folder . --override-config ~/.config/devcontainer/override.json zsh -ilc "nvim ."'
+
 # Utils
 alias random-string="openssl rand -base64 20 |  sed -E 's/(.)\1+/\1/g'"
 

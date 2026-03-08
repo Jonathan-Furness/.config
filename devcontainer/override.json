@@ -1,6 +1,5 @@
 {
   "remoteEnv": {
-    "SHELL": "/bin/zsh",
-    "PATH": "${containerEnv:PATH}:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/bin"
+    "SHELL": "/bin/zsh"
   }
 }

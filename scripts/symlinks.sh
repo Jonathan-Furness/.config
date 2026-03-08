@@ -29,8 +29,11 @@ if [[ "$SCRIPT_DIR" != "$CONFIG_DIR" ]]; then
   link_config "$SCRIPT_DIR/nvim"              "$CONFIG_DIR/nvim"
   link_config "$SCRIPT_DIR/tmux"              "$CONFIG_DIR/tmux"
   link_config "$SCRIPT_DIR/lazygit"           "$CONFIG_DIR/lazygit"
-  link_config "$SCRIPT_DIR/opencode"          "$CONFIG_DIR/opencode"
-  link_config "$SCRIPT_DIR/zsh"               "$CONFIG_DIR/zsh"
+  link_config "$SCRIPT_DIR/zsh"              "$CONFIG_DIR/zsh"
+  link_config "$SCRIPT_DIR/starship.toml"    "$CONFIG_DIR/starship.toml"
+  link_config "$SCRIPT_DIR/zed"              "$CONFIG_DIR/zed"
+  link_config "$SCRIPT_DIR/devcontainer"     "$CONFIG_DIR/devcontainer"
+  link_config "$SCRIPT_DIR/scripts"          "$CONFIG_DIR/scripts"
 else
   echo "==> Repo is already at $CONFIG_DIR — no symlinks needed"
 fi

@@ -1,7 +1,7 @@
 customCommands:
   - key: "C"
-    command: "git cz c"
-    description: "commit with commitizen"
+    command: "bash ~/.config/scripts/smart-commit.sh"
+    description: "smart commit (detects project type)"
     context: "files"
-    loadingText: "opening commitizen commit tool"
+    loadingText: "opening commit tool"
     output: terminal
