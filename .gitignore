@@ -3,6 +3,15 @@
 !/README.md
 !/install.sh
 !/Brewfile
+!/starship.toml
+
+# Install scripts
+!/scripts/
+!/scripts/**
+
+# Devcontainer overrides
+!/devcontainer/
+!/devcontainer/**
 
 # Nvim settings
 !/nvim/
