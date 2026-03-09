@@ -2,8 +2,11 @@
 !/.gitignore
 !/README.md
 !/install.sh
-!/Brewfile
 !/starship.toml
+!/install-nix.sh
+!/flake.nix
+!/flake.lock
+!/home.nix
 
 # Install scripts
 !/scripts/
